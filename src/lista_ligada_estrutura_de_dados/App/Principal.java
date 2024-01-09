@@ -15,9 +15,10 @@ public class Principal {
         System.out.print("\n");
 
         System.out.println("tamanho da lista é de: "+ lista.getTamanho() + " \neste são todos os objetos que estão na lista do programa\n");
-        System.out.println("valores adcionados na lista: "+lista.getPrimeiro().getValor()
+
+        System.out.println("Primeiro valor adcionados na lista: "+lista.getPrimeiro().getValor()
         );
-        System.out.println("valores adcionados na lista: "+lista.getUltimo().getValor()
+        System.out.println("Ultimo valor adcionados na lista: "+lista.getUltimo().getValor()
         );
 
         // for(int i =0; i < lista.getTamanho() ; i++ ){

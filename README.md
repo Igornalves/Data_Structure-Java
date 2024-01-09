@@ -1,18 +1,43 @@
-## Getting Started
+## Estrutura de Dados Em Java 
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+<div align="center" style="display: inline_block">
+<img  alt="java" width="100" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg">
+</div>
 
-## Folder Structure
+<br>
 
-The workspace contains two folders by default, where:
+Seja Bem vindo ao repositorio de Estrutura de dados que estarei usando da Linguagem Java para que possa aprender o maximo possivel sobre tal parte muito importante da programação que sera utilizada em muitas linguagens existentes.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## O que vc verá no meu repositorio ?
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Aqui no meu repositorio vc verá coisas como: 
 
-## Dependency Management
+- `Arrays Unidimensionais`
+- `Arrays Multidimensionais`
+- `Busca Linear Com Arrays`
+- `ArrayList`
+- `listas Ligadas`
+- `Listas Duplamente Ligadas`
+- `LinkedList`
+- `Pilhas e Filas`
+- `Árvores`
+- `Grafos`
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Este são algums dos metodos e tambem conhecimentos sobre a Base de estrutura de dados que esterei aprendendo aqui a fazer para desenvolver mais como desenvolvedor de sistemas de Software.
+
+> Estarei tambem fazendo algumas coisas para a `Resolução de Problemas`   de forma que ajude na `Implementação de estruturas de dados em problemas reais`.
+
+## Links Úteis
+
+Aqui abixo estão os links de outros repositorios que tenho em meu GitHub que possa se interressa:
+
+- >[Linguagem-C](https://github.com/Igornalves/Linguagem-C)
+- >[Projeto_Site-WhatsappBot](https://github.com/Igornalves/Projeto_Site-WhatsappBot)
+- >[Linguagem-Python](https://github.com/Igornalves/Linguagem-Python)
+- >[Biblioteca-React](https://github.com/Igornalves/Biblioteca-React)
+- >[FRONT-END_PROJETOS](https://github.com/Igornalves/FRONT-END_PROJETOS)
+
+---
+
+**Obrigado por ler! Espero que eu tenha ajudado voçê em seus estudos ou sua pesquisa com meu repositório.**
