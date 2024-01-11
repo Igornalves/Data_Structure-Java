@@ -54,7 +54,7 @@ public class BuscaLinearComVetorBidireecional {
         System.out.print("Digite o Nome de algum produto de Supermercado que vc compra no mês: ");
         String itemDeSupermercado = input.nextLine();
 
-        // System.out.println("\n");
+        //System.out.println("\n");
 
         //busca linear 
 
@@ -95,11 +95,5 @@ public class BuscaLinearComVetorBidireecional {
             System.out.println("Infelizmente não temos este produto aqui em nossa lista !!!");
             System.out.print("\n\n");
         }
-
-
-
-
-
-
     }
 }

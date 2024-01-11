@@ -55,6 +55,7 @@ public class ListaLigado {
     }
 
     public Elemento get(int posicao){
+
         Elemento atual = this.primeiro;
 
         for(int u =0; u < posicao;u++){
@@ -62,6 +63,7 @@ public class ListaLigado {
                 atual = atual.getProximo();
             }
         }
+        
         return atual;
     }
 }

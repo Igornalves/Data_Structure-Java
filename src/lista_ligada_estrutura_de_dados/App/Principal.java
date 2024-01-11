@@ -11,21 +11,40 @@ public class Principal {
         lista.adicionar("matheus");
         lista.adicionar("gabriel");
         lista.adicionar("sophia");
+        lista.adicionar("pedro");
+        lista.adicionar("maycon");
+        lista.adicionar("Eloa");
+        lista.adicionar("Cristal");
+        lista.adicionar("Cesar");
+        lista.adicionar("Catarina");
+        lista.adicionar("Alice");
 
         System.out.print("\n");
 
-        System.out.println("tamanho da lista é de: "+ lista.getTamanho() + " \neste são todos os objetos que estão na lista do programa\n");
+        System.out.println("tamanho da lista é de: " + lista.getTamanho() + " pessoas ou objeto");
 
-        System.out.println("Primeiro valor adcionados na lista: "+lista.getPrimeiro().getValor()
-        );
-        System.out.println("Ultimo valor adcionados na lista: "+lista.getUltimo().getValor()
-        );
+        System.out.print("\n\n");
 
-        // for(int i =0; i < lista.getTamanho() ; i++ ){
-        //     System.out.println(lista.get(i));
-        // }
+        System.out.println("Primeiro valor adcionados na lista: " + lista.getPrimeiro().getValor());
 
+        // System.out.print("\n");
+
+        System.out.println("Ultimo valor adcionados na lista: " + lista.getUltimo().getValor());
+
+        System.out.print("\n\n");
+
+        System.out.println("Este são todas as pessoas ou objetos que estão na lista do programa:\n");
+
+        //olhando todos que estão na lista usando um loop 
+
+        for (int i = 0; i < lista.getTamanho(); i++) {
+            System.out.println(i + ". " + lista.get(i).getValor());
+        }
 
         System.out.print("\n");
+
+        //fazendo uma busca liner na lista ligada:
+
+        
     }
 }
