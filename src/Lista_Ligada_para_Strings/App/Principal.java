@@ -1,6 +1,6 @@
-package lista_ligada_estrutura_de_dados.App;
+package Lista_Ligada_para_Strings.App;
 
-import lista_ligada_estrutura_de_dados.Class.ListaLigado;
+import Lista_Ligada_para_Strings.Class.ListaLigado;
 
 public class Principal {
     public static void main(String[] args) {
@@ -43,8 +43,24 @@ public class Principal {
 
         System.out.print("\n");
 
-        //fazendo uma busca liner na lista ligada:
+        //removendo pessoas da lista 
 
+        System.out.println("removendo algumas pessoas da lista como nome de: "+ lista.get(0).getValor() + " e " + lista.get(4).getValor() + ".\n");
+        
+        lista.remover("pedro");
+        lista.remover("jose");
+
+        System.out.println("removidos com sucesso: ok !!!\n");
+
+        System.out.println("tamanho da lista é de: " + lista.getTamanho() + " pessoas ou objeto \n");
+        
+        System.out.println("imprimindo todas as pessoas da lista abaixo: \n");
+
+        for(int i = 0; i < lista.getTamanho(); i++){
+            System.out.println(i + ". " + lista.get(i).getValor());
+        }
+
+        System.out.print("\n");
         
     }
 }

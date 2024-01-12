@@ -1,4 +1,4 @@
-package lista_ligada_estrutura_de_dados.Class;
+package Lista_Ligada_para_Strings.Class;
 
 public class Elemento {
 
