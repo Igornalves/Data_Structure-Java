@@ -1,4 +1,4 @@
-package Vetores_Arrays.App;
+package Vetores_Arrays;
 
 import java.util.ArrayList;
 

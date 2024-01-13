@@ -1,4 +1,4 @@
-package Vetores_Arrays.App;
+package Vetores_Arrays;
 
 public class VetorBidirecional {
     public static void main(String[] args) {
