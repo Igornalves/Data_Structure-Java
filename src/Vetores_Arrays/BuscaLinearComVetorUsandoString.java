@@ -2,8 +2,10 @@ package Vetores_Arrays;
 
 import java.util.Scanner;
 
-public class BuscaLinearComVetor {
+public class BuscaLinearComVetorUsandoString {
     public static void main(String[] args) {
+
+        //busca do tipo O(n)
 
         Scanner input = new Scanner(System.in);
 

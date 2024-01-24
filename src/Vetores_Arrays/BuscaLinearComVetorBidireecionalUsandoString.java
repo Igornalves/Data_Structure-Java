@@ -2,7 +2,7 @@ package Vetores_Arrays;
 
 import java.util.Scanner;
 
-public class BuscaLinearComVetorBidireecional {
+public class BuscaLinearComVetorBidireecionalUsandoString {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
