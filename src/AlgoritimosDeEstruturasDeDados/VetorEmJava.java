@@ -1,4 +1,4 @@
-package Vetores_Arrays;
+package AlgoritimosDeEstruturasDeDados;
 
 import java.util.ArrayList;
 

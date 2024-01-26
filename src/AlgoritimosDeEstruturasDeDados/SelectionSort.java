@@ -1,4 +1,4 @@
-package Vetores_Arrays;
+package AlgoritimosDeEstruturasDeDados;
 
 public class SelectionSort {
     public static void main(String[] args) {
