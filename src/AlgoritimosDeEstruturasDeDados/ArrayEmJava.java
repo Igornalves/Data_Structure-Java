@@ -2,7 +2,7 @@ package AlgoritimosDeEstruturasDeDados;
 
 import java.util.ArrayList;
 
-public class VetorEmJava {
+public class ArrayEmJava {
     public static void main(String[] args) {
 
         String[] vetor = new String[11];

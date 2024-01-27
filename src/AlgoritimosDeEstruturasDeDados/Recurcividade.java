@@ -25,7 +25,7 @@ public class Recurcividade {
         System.out.println("\n");
     }
 
-    public static int multi(int multiplicacao, int posicao, int[] array) {
+    private static int multi(int multiplicacao, int posicao, int[] array) {
         if (posicao < array.length) {
             multiplicacao = multiplicacao * array[posicao];
             return multi(multiplicacao, posicao + 1, array);
@@ -34,7 +34,7 @@ public class Recurcividade {
         }
     }
 
-    public static int somar(int soma, int posicao, int[] array) {
+    private static int somar(int soma, int posicao, int[] array) {
         if (posicao < array.length) {
             soma = soma + array[posicao];
             return somar(soma, posicao + 1, array);

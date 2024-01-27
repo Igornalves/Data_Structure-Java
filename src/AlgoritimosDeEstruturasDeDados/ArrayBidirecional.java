@@ -1,6 +1,6 @@
 package AlgoritimosDeEstruturasDeDados;
 
-public class VetorBidirecional {
+public class ArrayBidirecional {
     public static void main(String[] args) {
         
         String[][] nomes = {{"joao","matheus", "Felipe", "thiago"},{"junior", "henrique", "arthur","jose"}};
