@@ -55,7 +55,7 @@ public class InsertionSortComString {
                 j--;
             }
 
-            // Insira a chave na posição correta
+            // Insira a chave na posição correta para funcinar
             arrayDeEntrada[j + 1] = chave;
         }
     }
