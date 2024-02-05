@@ -28,10 +28,10 @@ public class InsertionSortComString {
         nomesDePessoas[20] = "livia";
         nomesDePessoas[21] = "paula";
         
-        System.out.println("lista antes da organizacao: ");
+        System.out.println("\nlista antes da organizacao: ");
         mostraLista(nomesDePessoas);
         
-        System.out.println("\n");
+        System.out.println("\n\n");
 
         System.out.println("lista depois da organizacao: ");
         insertionSort(nomesDePessoas);
@@ -62,7 +62,7 @@ public class InsertionSortComString {
 
     private static void mostraLista(String[] lista){
         for(int i =0; i < lista.length; i++){
-            System.out.println(lista[i]);
+            System.out.print(lista[i]+", ");
         }
     }
 }

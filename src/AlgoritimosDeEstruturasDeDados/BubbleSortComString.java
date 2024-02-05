@@ -32,9 +32,7 @@ public class BubbleSortComString {
 
         System.out.println("lista antes da ordenacao: \n");
 
-        for (int i = 0; i < objetosDeCasa.length; i++) {
-            System.out.println(objetosDeCasa[i]);
-        }
+        imprimirArray(objetosDeCasa);
         
         System.out.print("\n\n");
         

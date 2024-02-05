@@ -6,19 +6,18 @@ public class Recurcividade {
 
         int[] vetorArray = new int[10];
 
-        for (int i = 0; i < vetorArray.length; i++) {
-            vetorArray[i] = (int) (Math.random() * 20);
-        }
+        embaralhandoNumeros(vetorArray);
 
-        for (int i = 0; i < vetorArray.length; i++) {
-            System.out.println(vetorArray[i]);
-        }
+        System.out.println("\n");
+        System.out.println("mostrando o array completo: ");
+        
+        ImprimindoArray(vetorArray);
 
         System.out.println("\n");
 
         System.out.println("multiplicacao do array é de: \n" + multi(1, 0, vetorArray));
 
-        System.out.println("\n");
+        System.out.print("\n");
 
         System.out.println("a soma de todos os valores existentes do array é: \n" + somar(0, 0, vetorArray));
 
@@ -26,7 +25,9 @@ public class Recurcividade {
     }
 
     private static int multi(int multiplicacao, int posicao, int[] array) {
-        if (posicao < array.length) {
+        int tamanhoArray = array.length;
+        
+        if (posicao < tamanhoArray) {
             multiplicacao = multiplicacao * array[posicao];
             return multi(multiplicacao, posicao + 1, array);
         } else {
@@ -40,6 +41,18 @@ public class Recurcividade {
             return somar(soma, posicao + 1, array);
         } else {
             return soma;
+        }
+    }
+
+    private static void embaralhandoNumeros(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            array[i] = (int) (Math.random() * array.length);
+        }
+    }
+
+    private static void ImprimindoArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
         }
     }
 }

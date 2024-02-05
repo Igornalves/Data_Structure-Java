@@ -2,7 +2,7 @@ package AlgoritimosDeEstruturasDeDados;
 
 import java.util.Scanner;
 
-public class BuscaLinerComVetorUsandoInteiros {
+public class BuscaLiner {
     public static void main(String[] args) {
         
         Scanner input = new Scanner(System.in);

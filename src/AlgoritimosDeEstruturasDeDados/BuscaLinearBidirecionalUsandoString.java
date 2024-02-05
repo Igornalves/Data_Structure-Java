@@ -2,7 +2,7 @@ package AlgoritimosDeEstruturasDeDados;
 
 import java.util.Scanner;
 
-public class BuscaLinearComVetorBidireecionalUsandoString {
+public class BuscaLinearBidirecionalUsandoString {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);

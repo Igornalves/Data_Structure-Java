@@ -21,11 +21,9 @@ public class ArrayEmJava {
 
         System.out.println("");
         
-        System.out.println("Lista de Alunos: \n");
+        System.out.println("\nLista de Alunos: ");
         
-        for(int r = 0 ; r < vetor.length ; r++){
-            System.out.print(r + " " + vetor[r] + "\n");
-        }
+        imprimindoArrayString(vetor);
         
         int[] numerosDoJogo = new int[11];
         
@@ -41,24 +39,16 @@ public class ArrayEmJava {
         numerosDoJogo[9] = 10;
         numerosDoJogo[10] = 55;
         
-        System.out.println("");
+        System.out.println("\n\nLista de Numeros do Jogo Do Bicho: ");
 
-        System.out.println("Lista de Numeros do Jogo Do Bicho: \n");
-
-        for(int w = 0 ; w < numerosDoJogo.length ; w++){
-            System.out.print(w + ". " + numerosDoJogo[w] + "\n");
-        }
+        imprimindoArrayInteiros(numerosDoJogo);
 
         String[] vetorzao = {"Iasmin","Raissa","Maria","Daniel","Thiago","Juliana","Joao","Vitor","Eduardo","Iarlei"};
 
-        System.out.println("");
+        System.out.println("\n\nLista de Funcionario: ");
+        
+        imprimindoArrayString(vetorzao);
 
-        System.out.println("Lista de Funcionario: \n");
-        
-        for(int t = 0; t < vetorzao.length ; t++){
-            System.out.print(t + " " + vetorzao[t] + "\n");
-        };
-        
         ArrayList<String> vetozinho = new ArrayList<String>();
         
         vetozinho.add("BMW");
@@ -70,16 +60,30 @@ public class ArrayEmJava {
         vetozinho.add("Toro");
         vetozinho.add("Ford");
         vetozinho.add("Argo");
-        
-        System.out.println("");
-        
-        System.out.println("Lista de carros: \n");
+                
+        System.out.println("\n\nLista de carros: ");
 
-        for(int e = 0 ; e < vetozinho.size() ; e++){
-            System.out.print(e + " " + vetozinho.get(e) + "\n");
+        imprimindoArrayListString(vetozinho);
+        
+        System.out.println("\n\n");
+
+    }
+
+    private static void imprimindoArrayInteiros(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
         }
-        
-        System.out.println("");
+    }
 
+    private static void imprimindoArrayString(String[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + ", ");
+        }
+    }
+
+    private static void imprimindoArrayListString(ArrayList<String> array) {
+        for(int e = 0 ; e < array.size() ; e++){
+            System.out.print(array.get(e) + ", ");
+        }
     }
 }

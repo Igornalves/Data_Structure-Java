@@ -2,7 +2,7 @@ package AlgoritimosDeEstruturasDeDados;
 
 import java.util.Scanner;
 
-public class BuscaLinearComVetorUsandoString {
+public class BuscaLinearUsandoString {
     public static void main(String[] args) {
 
         //busca do tipo O(n)

@@ -5,13 +5,14 @@ public class BubbleSort {
 
         int[] vetor = new int[15];
 
-        System.out.println("numeros do vetor desordenados: \n");
+        System.out.print("\n\n");
+
+        System.out.println("numeros do vetor desordenados: ");
 
         //embaralhando com numeros aleatorios 
-        for (int r = 0; r < vetor.length; r++) {
-            vetor[r] = (int) (Math.random() * 50);
-            System.out.println(vetor[r]);
-        }
+        embaralhandoNumeros(vetor);
+
+        ImprimindoArray(vetor);
 
         System.out.print("\n\n");
 
@@ -19,31 +20,43 @@ public class BubbleSort {
         long fim;
 
         // BUBBLE SORT estrutura de dados tipo O(n²)
-        int aux;
-        for (int i = 0; i < vetor.length; i++) { // O(N)
-            for (int j = i + 1; j < vetor.length; j++) { // O(N)
-                if (vetor[i] > vetor[j]) {
-                    aux = vetor[j];
-                    vetor[j] = vetor[i];
-                    vetor[i] = aux;
-                }
-            }
-        }
+        BubbleSort(vetor);
 
         fim = System.currentTimeMillis();
 
+        System.out.println("numeros da vetor ordenados: ");
+
+        ImprimindoArray(vetor);
+
         System.out.print("\n\n");
-
-        System.out.println("numeros da vetor ordenados: \n");
-
-        for (int r = 0; r < vetor.length; r++) {
-            System.out.println(vetor[r]);
-        }
-
-        System.out.print("\n");
 
         System.out.println("Tempo de execução da Ordenação: " + (fim - inicio) + " milisegundos");
 
         System.out.print("\n\n");
+    }
+
+    private static void BubbleSort(int[] array){
+        int aux;
+        for (int i = 0; i < array.length; i++) { // O(N)
+            for (int j = i + 1; j < array.length; j++) { // O(N)
+                if (array[i] > array[j]) {
+                    aux = array[j];
+                    array[j] = array[i];
+                    array[i] = aux;
+                }
+            }
+        }
+    }
+
+    private static void ImprimindoArray(int[] array){
+        for (int r = 0; r < array.length; r++) {
+            System.out.print(array[r]+" ");
+        }
+    }
+
+    private static void embaralhandoNumeros(int[] array){
+        for (int r = 0; r < array.length; r++) {
+            array[r] = (int) (Math.random() * 50);
+        }
     }
 }
