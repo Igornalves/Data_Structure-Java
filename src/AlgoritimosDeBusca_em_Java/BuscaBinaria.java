@@ -1,4 +1,4 @@
-package ConhecimentoBasico;
+package AlgoritimosDeBusca_em_Java;
 
 import java.util.Scanner;
 

@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import Lista_Ligada_Generica.Class.IteratorListaLigada;
 import Lista_Ligada_Generica.Class.ListaLigada;
 
-public class Comparacao {
+public class Main {
     public static void main(String[] args) {
 
         LinkedList<Integer> lista = new LinkedList<Integer>();

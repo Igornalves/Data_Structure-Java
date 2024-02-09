@@ -1,4 +1,4 @@
-package ConhecimentoBasico;
+package Fila_e_Pilha_Metodos;
 
 import java.util.Stack;
 

@@ -1,6 +1,6 @@
-package ConhecimentoBasico;
+package Fila_e_Pilha_Metodos;
 
-public class Deque_PilhaEmJava {
+public class Deque_FilaEmJava {
 
     // Deque significa "double-ended queue", ou fila de duas extremidades.
 
@@ -22,18 +22,7 @@ public class Deque_PilhaEmJava {
     
     // getLast(), peekLast(): Retorna o elemento do final da fila sem removê-lo.
 
-    //Quando Usar:
-    // Use Deque quando precisar de operações eficientes em ambas as extremidades da fila.
-    // Oferece mais flexibilidade do que Stack para situações em que você pode precisar inserir/remover tanto no início quanto no final.
-
-    // Implementações Concretas:
-    // ArrayDeque é uma implementação eficiente baseada em array.
-    // LinkedList também implementa Deque.
-
-    // Observações:
-    // O uso de Deque é preferido sobre Stack, que é uma classe um pouco mais antiga e menos flexível.
-
     public static void main(String[] args) {
-
+        
     }
 }
