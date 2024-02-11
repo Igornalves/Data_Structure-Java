@@ -1,0 +1,34 @@
+package CollectionsEmJava.Queue;
+
+import java.util.Deque;
+import java.util.LinkedList;
+
+public class LinkedList_Deque {
+    public static void main(String args[]) {
+        System.out.println();
+        exemploListaSimples();
+        exemploListaSimples1();
+        System.out.println();
+    }
+
+    private static void exemploListaSimples() {
+        System.out.println("****** exemploListaSimples ******");
+        Deque<String> lista = new LinkedList<>();
+        lista.add("João da Silva");
+        lista.add("Antonio Sousa");
+        lista.add("Lúcia Ferreira");
+        System.out.println(lista);
+        System.out.println("");
+    }
+
+    private static void exemploListaSimples1() {
+        System.out.println("****** exemploListaSimples1 ******");
+        Deque<String> lista = new LinkedList<String>();
+        lista.add("João da Silva");
+        lista.add("Antonio Sousa");
+        lista.add("Lúcia Ferreira");
+        lista.addFirst("Rodrigo");
+        System.out.println(lista);
+        System.out.println("");
+    }
+}

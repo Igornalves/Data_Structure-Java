@@ -3,6 +3,7 @@ package AlgoritimosDeBusca_em_Java;
 import java.util.Scanner;
 
 public class BuscaLinearUsandoString {
+    @SuppressWarnings("resource")
     public static void main(String[] args) {
 
         //busca do tipo O(n)

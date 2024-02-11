@@ -5,11 +5,12 @@ public class QuickSortComString {
         
     }
 
-    private static void QuickSort(int[] array, int esquerda, int direita) {
+    @SuppressWarnings("unused")
+    private static void quickSort(int[] array, int esquerda, int direita) {
         if (esquerda < direita) {
             int pivo = Particao(array, esquerda, direita);
-            QuickSort(array, esquerda, pivo);
-            QuickSort(array, pivo + 1, direita);
+            quickSort(array, esquerda, pivo);
+            quickSort(array, pivo + 1, direita);
         }
     }
 
@@ -37,12 +38,14 @@ public class QuickSortComString {
         }
     }
 
+    @SuppressWarnings("unused")
     private static void embaralhandoNumeros(int[] array) {
         for (int i = 0; i < array.length; i++) {
             array[i] = (int) (Math.random() * array.length);
         }
     }
 
+    @SuppressWarnings("unused")
     private static void ImprimindoArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");

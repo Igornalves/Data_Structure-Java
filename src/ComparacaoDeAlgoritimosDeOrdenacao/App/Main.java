@@ -69,4 +69,19 @@ public class Main {
             array[i] = (int) (Math.random() * array.length);
         }
     }
+
+    /**
+     * metodo que imprime um array ou vetor de forma completa 
+     * 
+     * @deprecated metodo nao pode ser utilizado 
+     * 
+     * @see static void embaralhandoNumeros(int[] array)
+     */
+
+    @SuppressWarnings("unused")
+    private static void ImprimindoArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
+    }
 }
