@@ -28,17 +28,21 @@ Aqui no meu repositorio vc verá coisas como:
 Este são algums dos metodos e tambem conhecimentos sobre a Base de estrutura de dados que esterei aprendendo aqui a fazer para desenvolver mais como desenvolvedor de sistemas de Software.
 
 <div align="center" style="display: inline_block">
-<img  alt="java" width="360" src="image/Colecoes em java.png">
-<img  alt="java" width="250" src="image/arvore Estrutura de dados.png">
+<img  alt="java" width="520" src="image/Colecoes em java.png">
+<img  alt="java" width="356" src="image/arvore Estrutura de dados.png">
 </div>
 
-<div align="center" style="display: inline_block">
-<img  alt="java" width="360" src="image/fila eestrutura de daos.jpg">
-<img  alt="java" width="270" src="image/pihla estrutura de dados.jpg">
-</div>
+<br>
 
 <div align="center" style="display: inline_block">
-<img  alt="java" width="360" src="image/grafo estrutura de dados.jpg">
+<img  alt="java" width="500" src="image/fila eestrutura de daos.jpg">
+<img  alt="java" width="370" src="image/pihla estrutura de dados.jpg">
+</div>
+
+<br>
+
+<div align="center" style="display: inline_block">
+<img  alt="java" width="500" src="image/grafo estrutura de dados.jpg">
 </div>
 
 <br>
