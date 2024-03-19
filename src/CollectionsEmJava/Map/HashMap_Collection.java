@@ -1,97 +1,108 @@
 package CollectionsEmJava.Map;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
 public class HashMap_Collection {
-     public static void main(String args[]) {
-        exemploListaSimples();
-        exemploListaSimplesIterandoValores();
-        exemploListaSimplesIterandoChaves();
-        exemploListaSimplesIterandoChaveValor();
+    public static void main(String args[]) {
+
+        exemploListaSimplesDireta();
+
+        listaSimplesIterandoChaveValor();
+
     }
 
-    private static void exemploListaSimplesIterandoChaveValor() {
-        System.out.println("****** exemploListaSimplesIterandoChaveValor ******");
-        Map<Integer, String> lista = new HashMap<>();
-        
-        lista.put(1, "João da Silva");
-        lista.put(2, "Antonio Sousa");
-        lista.put(3, "Lúcia Ferreira");
-        lista.put(4, "João da Silva");
+    private static void listaSimplesIterandoChaveValor() {
 
-        System.out.println("***** for comum *****");
-        Set<Map.Entry<Integer, String>> entry = lista.entrySet();
+        System.out.println("\nlista feita dentro de um metodo usando HashMap\n");
 
-        for (Map.Entry<Integer, String> e : entry) {
-            System.out.println("Chave: " + e.getKey());
-            System.out.println("Valor: " + e.getValue());
-        }
+        HashMap<Integer, String> lista = new HashMap<>();
 
-        System.out.println("***** forEach stream *****");
-        lista.entrySet().forEach(e -> {
-            System.out.println("Chave: " + e.getKey());
-            System.out.println("Valor: " + e.getValue());
-        });
+        adcionando(lista, 1, "João da Silva");
+        adcionando(lista, 2, "Antonio Sousa");
+        adcionando(lista, 3, "Lúcia Ferreira");
+        adcionando(lista, 4, "João da Silva");
 
-        System.out.println("***** forEach stream 1 *****");
-        lista.keySet().stream().forEach(System.out::println);
+        System.out.print("\n");
 
-        System.out.println("***** forEach stream 2 *****");
-        lista.values().stream().forEach(System.out::println);
+        System.out.print("***** for comum *****");
+        imprimindoUsandoForClassico(lista);
 
-        System.out.println("***** forEach stream 3 *****");
-        lista.forEach((key, value) -> System.out.println(key + " " + value));
+        System.out.print("\n");
 
-        System.out.println("***** iterator *****");
+        System.out.print("***** forEach *****");
+        imprimindoUsandoForEach(lista);
+
+        System.out.print("\n");
+
+        System.out.println("***** Iterator *****");
+        imprimindoUsandoInterador(lista);
+
+        System.out.print("\n");
+
+    }
+
+    private static void adcionando(Map<Integer, String> lista, Integer valor, String nome) {
+
+        lista.put(valor, nome);
+        System.out.println("Foi Adcionando na Lista HashMap !!!");
+
+    }
+
+    private static void imprimindoUsandoInterador(Map<Integer, String> lista) {
+        System.out.println("\nVerificacao de Lista Completa Usando o Interador: \n");
         Iterator<Map.Entry<Integer, String>> it = lista.entrySet().iterator();
 
-        while(it.hasNext()) {
+        while (it.hasNext()) {
             Map.Entry<Integer, String> entry1 = it.next();
             System.out.println("Chave: " + entry1.getKey());
             System.out.println("Valor: " + entry1.getValue());
+            System.out.print("\n");
         }
     }
 
-    private static void exemploListaSimplesIterandoChaves() {
-        System.out.println("****** exemploListaSimplesIterandoChaves ******");
-        Map<Integer, String> lista = new HashMap<>();
+    private static void imprimindoUsandoForEach(Map<Integer, String> lista) {
+        System.out.println("\nVerificacao de Lista Completa Usando o ForEach: \n");
 
-        lista.put(1, "João da Silva");
-        lista.put(2, "Antonio Sousa");
-        lista.put(3, "Lúcia Ferreira");
-        lista.put(4, "João da Silva");
-
-        for (Integer value : lista.keySet()) {
-            System.out.println(value);
+        for (Map.Entry<Integer, String> entrada : lista.entrySet()) {
+            Integer chave = entrada.getKey();
+            String valor = entrada.getValue();
+            System.out.println("Chave: " + chave);
+            System.out.println("Valor: " + valor);
+            System.out.print("\n");
         }
     }
 
-    private static void exemploListaSimplesIterandoValores() {
-        System.out.println("****** exemploListaSimplesIterandoValores ******");
-        Map<Integer, String> lista = new HashMap<>();
+    private static void imprimindoUsandoForClassico(Map<Integer, String> lista) {
 
-        lista.put(1, "João da Silva");
-        lista.put(2, "Antonio Sousa");
-        lista.put(3, "Lúcia Ferreira");
-        lista.put(4, "João da Silva");
-        for (String value : lista.values()) {
-            System.out.println(value);
+        System.out.println("\nVerificacao de Lista Completa: \n");
+
+        Set<Map.Entry<Integer, String>> entradaSet = lista.entrySet();
+
+        List<Map.Entry<Integer, String>> entradaList = new ArrayList<>(entradaSet);
+
+        for (int i = 0; i < entradaList.size(); i++) {
+            Map.Entry<Integer, String> e = entradaList.get(i); 
+            System.out.println("Chave: " + e.getKey()); 
+            System.out.println("Valor: " + e.getValue()); 
+            System.out.print("\n");
         }
     }
 
-    private static void exemploListaSimples() {
-        System.out.println("****** exemploListaSimples ******");
-        Map<Integer, String> lista = new HashMap<>();
+    private static void exemploListaSimplesDireta() {
+
+        System.out.println("\n(Exemplo Lista Simples usando HashMap do Java)");
+        HashMap<Integer, String> lista = new HashMap<>();
 
         lista.put(1, "João da Silva");
         lista.put(2, "Antonio Sousa");
         lista.put(4, "João da Silva");
         lista.put(3, "Lúcia Ferreira");
 
-        System.out.println(lista);
-        System.out.println("");
+        imprimindoUsandoForClassico(lista);
     }
 }

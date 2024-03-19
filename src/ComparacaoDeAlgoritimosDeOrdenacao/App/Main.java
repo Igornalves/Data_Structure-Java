@@ -13,7 +13,7 @@ public class Main {
 
         long inicio, fim;
         RetornoDeTrocas retorno;
-        int[] arrayInicial = new int[10];
+        int[] arrayInicial = new int[10000];
 
         embaralhandoNumeros(arrayInicial);
 

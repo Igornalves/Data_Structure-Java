@@ -1,13 +1,14 @@
 package CollectionsEmJava.List;
 
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Random;
 
 public class LinkedList_Collections {
     public static void main(String[] args) {
 
-        LinkedList<Integer> listaDeNumeros = new LinkedList<>();
-        LinkedList<String> listaDeNomes = new LinkedList<>();
+        List<Integer> listaDeNumeros = new LinkedList<>();
+        List<String> listaDeNomes = new LinkedList<>();
 
         embaralhandoNumeros(listaDeNumeros, 25);
         
@@ -25,10 +26,16 @@ public class LinkedList_Collections {
         listaDeNomes.add("Lucas");
         listaDeNomes.add("Nicolas");
 
+        verificandoElementoString(listaDeNomes, "Sophia");
+
+        System.out.println("O elemento chamando " + listaDeNomes.get(4).toString() + " foi removido da lista !!!");
+        
+        listaDeNomes.remove("Luiz");
+
         imprimindoLinkedListString(listaDeNomes);
     }
 
-    private static void imprimindoLinkedListString(LinkedList<String> listaLigada) {
+    private static void imprimindoLinkedListString(List<String> listaLigada) {
         System.out.println("\nImprimindo lista completa abaixo: \n");
         for (int e = 0; e < listaLigada.size(); e++) {
             System.out.print(listaLigada.get(e) + ", ");
@@ -37,7 +44,7 @@ public class LinkedList_Collections {
         System.out.println("\n");
     }
 
-    private static void imprimindoLinkedListInteiros(LinkedList<Integer> listaLigada) {
+    private static void imprimindoLinkedListInteiros(List<Integer> listaLigada) {
         System.out.println("\nImprimindo lista completa de numeros abaixo: \n");
         for (int e = 0; e < listaLigada.size(); e++) {
             System.out.print(listaLigada.get(e) + " ");
@@ -46,7 +53,7 @@ public class LinkedList_Collections {
     }
 
     @SuppressWarnings("unused")
-    private static void embaralhandoNumeros(LinkedList<Integer> listaLigada, int limite) {
+    private static void embaralhandoNumeros(List<Integer> listaLigada, int limite) {
         Random random = new Random();
         int tamanhoArray = listaLigada.size();
         
@@ -58,5 +65,18 @@ public class LinkedList_Collections {
             }
         }
 
+    }
+
+    private static void verificandoElementoString(List<String> lista, String elemento) {
+        // elemento.equalsIgnoreCase(elemento);
+        boolean validacao = lista.contains(elemento);
+
+        if (validacao == true) {
+            System.out.print("\nelemento verificado tem na fila !!! elemento: ");
+            System.out.println(elemento);
+        } else {
+            System.out.println("\nelemento verificado nao existe na fila");
+        }
+        System.out.print("\n");
     }
 }

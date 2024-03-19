@@ -12,7 +12,7 @@ public class Main {
         ArrayList<Integer> vetor = new ArrayList<Integer>();
         ListaLigada<Integer> listaGenerica = new ListaLigada<Integer>();
 
-        int limite = 10000;
+        int limite = 200000;
 
         // Tempo no qual é adcionado em uma Lista ligada da Biblioteca LinkedList
 
@@ -61,8 +61,21 @@ public class Main {
             lista.get(i);
         }
         tempoFinal = System.currentTimeMillis();
-
+        
         System.out.print("O tempo de leitura do LinkedList em milisegundos: ");
+        System.out.print(tempoFinal - tempoInicial);
+        System.out.print("\n\n");
+        tempoInicial = System.currentTimeMillis();
+        
+        // tempo de pesquisa do LinkedList
+        
+        tempoInicial = System.currentTimeMillis();
+        for (int i = 0; i < lista.size(); i++) {
+            lista.contains(i);
+        }
+        tempoFinal = System.currentTimeMillis();
+
+        System.out.print("O tempo de pesquisa do LinkedList em milisegundos: ");
         System.out.print(tempoFinal - tempoInicial);
         System.out.print("\n\n");
 
@@ -75,6 +88,18 @@ public class Main {
         tempoFinal = System.currentTimeMillis();
 
         System.out.print("O tempo de leitura do Vetor (ArrayList) em milisegundos: ");
+        System.out.print(tempoFinal - tempoInicial);
+        System.out.print("\n\n");
+
+        // tempo de pesquisa do Vetor (ArrayList)
+
+        tempoInicial = System.currentTimeMillis();
+        for (int i = 0; i < vetor.size(); i++) {
+            vetor.contains(i);
+        }
+        tempoFinal = System.currentTimeMillis();
+
+        System.out.print("O tempo de pesquisa do Vetor (ArrayList) em milisegundos: ");
         System.out.print(tempoFinal - tempoInicial);
         System.out.print("\n\n");
 
